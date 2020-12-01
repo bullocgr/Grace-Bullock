@@ -30,5 +30,3 @@ A group of peers and I decided we wanted to make an application similar to reddi
 [Linkedin](https://www.linkedin.com/in/grace-m-bullock/)
 
 [Github](https://github.com/bullocgr)
-
-[Resume](./resume.pdf)
