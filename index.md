@@ -16,9 +16,11 @@ This project will create a geospatial analysis tool that will provide emergency 
 
 The team is currently working with Dr. Joseph Louis in gathering geodata about roadways in Astoria, OR. We are also working on gathering information about buildings and how likely the are to fall if a disaster were to happen (such as the Cascadia earthquake followed by a tsunami). Once this step is done, we will begin prototyping a toolbox in ArcGIS to see what capabilities it has. If the toolbox allows for algorithms and visualization based on our geodata, then we will move forward in refining what the toolbox will do. This is still open ended but as we find out more about what the toolbox can do our project will become more refined.
 
+
 [Particle System](https://github.com/bullocgr/visualization/tree/master/particle%20system%20mac)
 
 This project involved creating a particle system that followed some form of real physics. I decided I wanted to make a fountain like object. I created the particles in a particle array that updated every 10 milliseconds. During the update period, the velocity, location, and color of the particles was updated making it look like the particles are moving seemlessly. I also did this project but instead of loading it into an array I utilized parallel processing to load in and update the particles on different thread on the GPU and then loaded it onto the CPU to display. The repo can be found [here](https://github.com/bullocgr/parallel-programming/tree/master/project7A).
+
 
 [NASA Picture of the Day](https://github.com/bullocgr/NasaPicOfTheDay)
 
