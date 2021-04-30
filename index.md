@@ -4,27 +4,23 @@ I am a fourth year computer science student at Oregon State University. My degre
 
 Related to my field, I enjoy working with graphics and have experience in OpenGL, OpenSL, and Unreal. I also enjoy solving parallel processing problems as well as optimizing software for hardware.
 
-In my free time, I enjoy being outdoors and playing video games. I ski when I can (I grew up in Colorado so of course I ski) and I'm currently learning to play Super Smash Brothers Melee as well osu!. 
-
 ## Projects
 
-[Geospatial Analysis for Disaster Planning](https://github.com/bullocgr/capstone) (It's private for now but will become public when the project is finished.)
+[Geospatial Analysis for Disaster Planning](https://github.com/bullocgr/capstone)
 
-Currently, I am working with three other computer science students on a project called "Geospatial Analysis for Disaster Planning."
+Currently, I am working with three other computer science students on a project titled "Geospatial Analysis for Disaster Planning."
 
-This project will create a geospatial analysis tool that will provide emergency managers with a system level view of the impact of disasters on their jurisdiction’s lifeline networks. This means that our software will help them in creating robust response plans by identifying critical intersections of lifeline networks that may cause bottlenecks in recovery, as well as by providing estimates of time and resources required for debris clearance.
+The project creates a geospatial analysis tool that will provide emergency managers with a system level view of the impact of disasters on their jurisdiction’s lifeline networks. This means the software helps them in creating robust response plans by identifying critical intersections of lifeline networks that may cause bottlenecks in recovery, as well as by providing estimates of time and resources required for debris clearance. The team is partnered with Dr. Joseph Louis, an Oregon State civil engineering professor.
 
-The team is currently working with Dr. Joseph Louis in gathering geodata about roadways in Astoria, OR. We are also working on gathering information about buildings and how likely the are to fall if a disaster were to happen (such as the Cascadia earthquake followed by a tsunami). Once this step is done, we will begin prototyping a toolbox in ArcGIS to see what capabilities it has. If the toolbox allows for algorithms and visualization based on our geodata, then we will move forward in refining what the toolbox will do. This is still open ended but as we find out more about what the toolbox can do our project will become more refined.
+The project currently runs within ArcGIS Pro, a tool used by civil engineers and emergency managers as well as people who do work with geographical data (or geo data). ArcGIS uses a feature called [toolboxes](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/an-overview-of-the-analysis-toolbox.htm) which allows for the user to select areas, create buffers, and perform certain calculations. ArcGIS also provides the functionality of creating custom toolboxes which can be paired with [scripts](https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/basics/create-a-python-script-tool.htm) that give the user the same functionalities but can perform specialized calculations that ArcGIS Pro does not offer. The scripts can take in certain data types defined by the user and then print out the calculations.
+
+The team has collectively created three scripts. The first one is a [random raster generator](https://github.com/bullocgr/capstone/blob/main/scripts/CreateRandomRaster.PY). The rest of our scripts require [raster data](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/what-is-raster-data.htm) in order to run. Originally, our team wanted to find raster data that simulated what debris spread would look like if the town of Astoria, OR was hit with an earthquake but we were not able to find any that was widely available. Instead, we created a script to simulate debris spread so that we could test the other tools with this data.
+
+The next script is a [clearance time script](https://github.com/bullocgr/capstone/blob/main/scripts/DetermineClearanceTime.PY). This script takes in the previous raster data as well as an area to clear (in polygon format) and determines how long it will take to clean up the area. The calculations are based on equations that Dr. Louis provided the team with. The last script is a [debris volume script](https://github.com/bullocgr/capstone/blob/main/scripts/DetermineDebrisVolume.PY). This script determines just how much debris there is given the raster data. The raster data does not provide us with exact numbers so we needed to find a way to calculate certain cells within the raster data. This script achieves that and gives the output of how much debris there is as a hard value.
+
+My role in the project has been managerial. I have been in charge of keeping track of progress and relaying that information to Dr. Louis as well as facilitating meetings. The docs for our github and drive have been polished by me and maintaining them when there are updates has been done by me. Our team has met with outside resources and making sure we are prepped for and with questions as well as guiding the meetings so they are useful and efficient. I have also been the main person to test and merge pull requests in the github repository. 
 
 
-[Particle System](https://github.com/bullocgr/visualization/tree/master/particle%20system%20mac)
-
-This project involved creating a particle system that followed some form of real physics. I decided I wanted to make a fountain like object. I created the particles in a particle array that updated every 10 milliseconds. During the update period, the velocity, location, and color of the particles was updated making it look like the particles are moving seemlessly. I also did this project but instead of loading it into an array I utilized parallel processing to load in and update the particles on different thread on the GPU and then loaded it onto the CPU to display. The repo can be found [here](https://github.com/bullocgr/parallel-programming/tree/master/project7A).
-
-
-[NASA Picture of the Day](https://github.com/bullocgr/NasaPicOfTheDay)
-
-A group of peers and I decided we wanted to make an application similar to reddit but instead of using the reddit API, we would use the NASA picture of the day API. This API included a picture, when the picture was taken, who took the picture, and some other information about it. Our app showed each picture that was uploaded by the API and when the picture was clicked on, it would show more information about the picture. The application could handle saving the image as well as sharing it with others through the app. The user could also save their favorite pictures directly in the app with a local SQLite database. This way, the user could go back and look at their favorite photos without having to download them to their phone.
 
 ## Links
 [Linkedin](https://www.linkedin.com/in/grace-m-bullock/)
